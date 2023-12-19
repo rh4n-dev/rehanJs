@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@fluentui/react-components";
 import * as microsoftTeams from "@microsoft/teams-js";
+import "./Home.css"
 
 const Home = () => {
   let OnAddTeamButtonClick = () => {
@@ -27,14 +28,17 @@ const Home = () => {
 
   return (
     <>
-      <div>
-        <h1>Teams</h1>
-      </div>
+      <div className="content">
+        <div className="Team">
+          <h1>Teams</h1>
+        </div>
+        <div className="Team">
+          <h3>Add new team</h3>
+        </div>
 
-      <div>
-        <h3>Add new team</h3>
-        <br />
-        <Button onClick={OnAddTeamButtonClick}>Add Team</Button>
+        <div className="Button">
+          <Button onClick={OnAddTeamButtonClick}>Add Team</Button>
+        </div>
       </div>
     </>
   );

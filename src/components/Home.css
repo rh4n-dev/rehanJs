@@ -1,0 +1,33 @@
+.content {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-left: 15px; */
+}
+
+.Team{
+    margin-left: 10px;
+}
+
+.Button button{
+    padding: 10px 20px;
+    background-color: #3e13fe;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;  
+    width: 95vw;
+    &:hover {
+      background-color: #42009e;
+      color: #ffffff;
+    }
+  }
+
+.Button{
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
